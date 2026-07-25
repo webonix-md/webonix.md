@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ro" data-lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="shortcut icon" href="../../favicon.ico">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+
+<title>WEBONIX — Dezvoltare landing page</title>
+<meta name="description" content="Dezvoltarea landing page-urilor pentru afaceri mici din Moldova. Etape, termene, prețuri."><link rel="stylesheet" href="../../design-system/tokens.css">
+<style>
+  #hero{
+    background:linear-gradient(270deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.8) 35%, rgba(0,0,0,.8) 65%, rgba(0,0,0,.75) 100%),
+      url('../../img/365.webp') center/cover no-repeat;
+
+  }
+  @media (max-width:700px){
+    #hero{background-position:20% center, 20% center;}
+  }
+  #process{background:#050505;}
+  #included{background:#000;}
+  #packages{background:#050505;}
+  #faq{background:#000;}
+
+  #hero .hero-title{font-size:clamp(2rem,5.5vw,4rem);}
+</style>
+<link rel="canonical" href="https://webonix-md.github.io/webonix.md/ro/pages/landing.html">
+<link rel="alternate" hreflang="ru" href="https://webonix-md.github.io/webonix.md/pages/landing.html">
+<link rel="alternate" hreflang="ro" href="https://webonix-md.github.io/webonix.md/ro/pages/landing.html">
+<link rel="alternate" hreflang="x-default" href="https://webonix-md.github.io/webonix.md/pages/landing.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_MD">
+<meta property="og:locale:alternate" content="ru_MD">
+<meta property="og:site_name" content="WEBONIX">
+<meta property="og:title" content="WEBONIX — Dezvoltare landing page">
+<meta property="og:description" content="Dezvoltarea landing page-urilor pentru afaceri mici din Moldova. Etape, termene, prețuri.">
+<meta property="og:url" content="https://webonix-md.github.io/webonix.md/ro/pages/landing.html">
+<meta property="og:image" content="https://webonix-md.github.io/webonix.md/img/365.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WEBONIX — Dezvoltare landing page">
+<meta name="twitter:description" content="Dezvoltarea landing page-urilor pentru afaceri mici din Moldova. Etape, termene, prețuri.">
+<meta name="twitter:image" content="https://webonix-md.github.io/webonix.md/img/365.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Webonix",
+  "url": "https://webonix-md.github.io/webonix.md/ro/index.html",
+  "description": "Dezvoltăm site-uri corporative, identitate vizuală și landing page-uri pentru afaceri din Moldova de orice dimensiune. Contract, termene fixe, transferul tuturor acceselor.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Moldova"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+373-79-508-887",
+    "contactType": "customer service",
+    "areaServed": "MD",
+    "availableLanguage": [
+      "ru",
+      "ro"
+    ]
+  },
+  "sameAs": [
+    "https://t.me/webonixmd"
+  ],
+  "logo": "https://webonix-md.github.io/webonix.md/apple-touch-icon.png"
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay"></div>
+<div id="cursor"></div>
+<div id="cursorCoord">X:0 Y:0</div>
+
+<nav class="site-nav">
+  <a href="../index.html" class="site-logo" aria-label="Webonix">
+    <svg viewBox="44 186 433 141" xmlns="http://www.w3.org/2000/svg">
+      <path d="M146.5,288.2l-18.8-37.4L109,288.2H89l-23.4-52.6h17.7l16.3,38.3l18.8-38.3h18.7l19.3,38.3l15.4-37c-8-24-30.7-41.3-57.4-41.3c-33.4,0-60.5,27.1-60.5,60.5s27.1,60.5,60.5,60.5c21.6,0,40.6-11.3,51.3-28.4L146.5,288.2L146.5,288.2z"/>
+      <circle cx="183.3" cy="226.1" r="10.4"/>
+      <path d="M204.2,281c3,0,5.8-0.1,8.2-0.3c2.5-0.2,4.7-0.5,6.6-0.8c1.9-0.3,3.4-0.5,4.5-0.7l1.9,6.5c-1.8,0.4-3.9,0.8-6.3,1.2c-2.4,0.3-5,0.6-7.7,0.8c-2.7,0.2-5.3,0.3-8,0.3c-5.6,0-10.2-0.5-13.9-1.6c-3.6-1.1-6.4-2.8-8.1-5.1c-1.8-2.3-2.7-5.4-2.7-9.3c0-3.8,0.9-6.9,2.8-9.2c1.9-2.3,4.6-4,8.1-5.1c3.6-1.1,7.9-1.6,12.9-1.6c3.6,0,6.8,0.2,9.7,0.8c2.9,0.5,5.4,1.3,7.5,2.4s3.7,2.5,4.8,4.3s1.7,4,1.7,6.6c0,0.4,0,0.9,0,1.4c0,0.6-0.1,1.1-0.1,1.6s-0.1,0.8-0.1,1.1h-42.4v-4.8h35.3l-1.4,1.9c0-2.1-0.4-3.8-1.2-5.1c-0.8-1.3-2.3-2.3-4.5-2.9s-5.4-1-9.5-1c-3.6,0-6.5,0.3-8.7,0.9s-3.8,1.6-4.7,2.9c-1,1.4-1.4,3.2-1.4,5.6c0,1.9,0.3,3.4,0.9,4.7c0.6,1.2,1.5,2.2,2.8,2.8c1.3,0.6,3,1.1,5.2,1.3C198.4,280.9,201.1,281,204.2,281z"/>
+      <rect x="232.6" y="242.4" width="8.9" height="45"/>
+      <path d="M260.3,287.4H237v-7.3h22.6c2.6,0,4.8-0.3,6.5-0.8c1.8-0.5,3.1-1.4,4-2.6s1.4-2.8,1.4-4.8c0-2.9-0.8-5-2.4-6.4c-1.6-1.3-4.2-2-7.6-2c-2.9,0-5.9,0.3-9.1,1c-3.2,0.7-6.3,1.5-9.5,2.5s-6.5,2.1-9.7,3.3v-6.2c2.3-1.2,5-2.5,8-3.7s6.4-2.2,10-3s7.3-1.2,11-1.2c6,0,10.5,1.3,13.6,3.8s4.6,6.5,4.6,11.8c0,3.7-0.8,6.7-2.4,8.9c-1.6,2.3-3.9,3.9-7,5C268.1,286.9,264.5,287.4,260.3,287.4z"/>
+      <path d="M331.6,260.1c-4.3-2.5-10.9-3.8-19.8-3.8c-8.8,0-15.4,1.2-19.7,3.8c-4.3,2.5-6.4,6.6-6.4,12.1s2.1,9.6,6.4,12.1c4.2,2.5,10.8,3.8,19.7,3.8s15.5-1.3,19.8-3.8c4.3-2.6,6.4-6.6,6.4-12.1S335.9,262.7,331.6,260.1z M327.4,277c-1,1.2-2.8,2.1-5.3,2.7c-2.5,0.5-5.9,0.8-10.3,0.8c-4.4,0-7.8-0.2-10.3-0.8c-2.5-0.6-4.2-1.5-5.3-2.7c-1.1-1.2-1.6-2.8-1.6-4.8s0.5-3.6,1.6-4.8c1-1.2,2.8-2.1,5.3-2.7c2.5-0.5,5.9-0.8,10.3-0.8c4.3,0,7.8,0.2,10.3,0.8s4.2,1.5,5.3,2.7s1.6,2.8,1.6,4.8S328.5,275.8,327.4,277z"/>
+      <polygon points="344.4,287.4 344.4,257.1 352.3,257.1 353.4,264 353.4,287.4 "/>
+      <path d="M391.4,270.8v16.6h-9v-15.3c0-1.8-0.4-3.3-1.1-4.5c-0.8-1.2-1.9-2.1-3.6-2.8c-1.7-0.7-3.7-0.9-6.3-0.9c-3.4,0-7.3,0.5-11.8,1.6c-4.5,1-9.2,2.5-14.2,4.3v-5.3c1.8-0.9,3.7-1.9,5.9-2.8c2.2-1,4.5-1.8,7-2.6c2.5-0.8,5.1-1.4,7.8-2c2.7-0.5,5.4-0.8,8.2-0.8c3.7,0,6.8,0.5,9.3,1.5s4.5,2.5,5.8,4.7C390.7,264.7,391.4,267.3,391.4,270.8z"/>
+      <rect x="398.4" y="244.3" width="8.9" height="8.7"/>
+      <rect x="398.3" y="257.1" width="8.9" height="30.3"/>
+      <polygon points="424.1,287.4 411.5,287.4 435.3,270.2 436.4,269.5 453.9,257.1 466.5,257.1 443.2,273.7 442.2,274.3 "/>
+      <polygon points="442.5,269.8 443,270.2 467,287.4 454.2,287.4 436.1,274.4 435.4,273.9 411.6,257.2 424.4,257.2 "/>
+    </svg>
+  </a>
+  <div class="site-links">
+    <a href="../index.html" class="i18n"><span class="ro">ACASĂ</span></a>
+    <a href="services.html" class="i18n"><span class="ro">SERVICII</span></a>
+    <div class="nav-dropdown">
+      <button type="button" class="nav-dropdown-trigger active i18n"><span class="ro">SITE-URI</span></button>
+      <div class="nav-dropdown-menu">
+        <a href="portal.html" class="i18n"><span class="ro">Site corporativ</span></a>
+        <a href="global.html" class="i18n"><span class="ro">Site pentru exportatori</span></a>
+        <a href="landing.html" class="active i18n"><span class="ro">Landing page</span></a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <button type="button" class="nav-dropdown-trigger i18n"><span class="ro">BRANDING</span></button>
+      <div class="nav-dropdown-menu">
+        <a href="logo.html" class="i18n"><span class="ro">Logo</span></a>
+        <a href="identity.html" class="i18n"><span class="ro">Identitate vizuală</span></a>
+        <a href="materials.html" class="i18n"><span class="ro">Materiale de brand</span></a>
+      </div>
+    </div>
+    <a href="audit.html" class="i18n"><span class="ro">AUDIT GRATUIT</span></a>
+    <a href="contacts.html" class="i18n"><span class="ro">CONTACTE</span></a>
+  </div>
+  <div class="site-right">
+    <div class="site-status"><span class="dot"></span> SYS STATUS: ONLINE</div>
+    <div class="lang-switch">
+      <a href="#" class="active" data-lang="ro" aria-current="true">RO</a>
+      <a href="../../pages/landing.html" data-lang="ru">RU</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<div class="hud" id="hud-loc">LOC: 47.0245° N, 28.8322° E — CHIȘINĂU, MD</div>
+<div class="hud" id="hud-clock">--:--:--</div>
+
+<div id="layerNav">
+  <div class="segs"></div>
+  <div class="label" id="layerLabel"></div>
+</div>
+
+<main>
+<!-- LAYER 01 : HERO -->
+<section id="hero" class="hero-section" data-layer="0" data-label-ro="LAYER 01 / LANDING" data-label-ru="УРОВЕНЬ 01 / ЛЕНДИНГ">
+  <div class="layer-tag">01 / 06</div>
+  <div class="inner centered">
+    <div class="label-mono i18n"><span class="ro">DEZVOLTARE LANDING PAGE</span></div>
+    <h1 class="hero-title i18n">
+      <span class="ro">Landing page-ul nu e un site mic.<br>E o pagină construită să vândă.</span>
+      
+    </h1>
+    <p class="hero-sub i18n">
+      <span class="ro">Dezvoltăm landing page-uri pentru afaceri mici și antreprenori din Moldova: ofertă clară, formular simplu și lansare rapidă.</span>
+      
+    </p>
+    <div class="cta-row i18n">
+      <span class="ro"><a href="#process" class="cta">VEDEȚI ETAPELE DE LUCRU →</a><a href="contacts.html" class="cta outline">COMANDAȚI LANDING-UL</a></span>
+      
+    </div>
+    <div class="stats-row">
+      <div class="stat"><b>1–2</b><span class="i18n"><span class="ro">SĂPTĂMÂNI DE LA BRIEF LA LANSARE</span></span></div>
+      <div class="div"></div>
+      <div class="stat"><b>1</b><span class="i18n"><span class="ro">PAGINĂ, TOTUL LA VEDERE</span></span></div>
+      <div class="div"></div>
+      <div class="stat"><b>RO/RU</b><span class="i18n"><span class="ro">ADAPTIV MOBIL</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 02 : PROCESS STAGES -->
+<section id="process" data-layer="1" data-label-ro="LAYER 02 / PROTOCOL" data-label-ru="УРОВЕНЬ 02 / ПРОТОКОЛ">
+  <div class="layer-tag">02 / 06</div>
+  <div class="section-head">
+    <div class="label-mono i18n"><span class="ro">CUM DECURGE LUCRUL</span></div>
+    <h2 class="i18n"><span class="ro">Șase etape</span></h2>
+    <p class="sub i18n">
+      <span class="ro">De la prima discuție până la landing-ul lansat.</span>
+      
+    </p>
+  </div>
+  <div class="stage-grid">
+    <div class="stage-card">
+      <div class="stage-num i18n"><span class="ro">ETAPA 01</span></div>
+      <h3 class="i18n"><span class="ro">Prima discuție</span></h3>
+      <p class="i18n"><span class="ro">Ne sunăm sau scriem în Telegram. Spuneți ce vindeți și cui, ce acțiune așteptați de la vizitator.</span></p>
+      <div class="stage-duration i18n"><span class="ro">15–30 MINUTE</span></div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num i18n"><span class="ro">ETAPA 02</span></div>
+      <h3 class="i18n"><span class="ro">Brief și ofertă</span></h3>
+      <p class="i18n"><span class="ro">Fixăm oferta: ce anume vindeți, la ce preț, ce beneficii contează pentru client. Fără ofertă clară — landing-ul nu vinde.</span></p>
+      <div class="stage-duration i18n"><span class="ro">1 ZI</span></div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num i18n"><span class="ro">ETAPA 03</span></div>
+      <h3 class="i18n"><span class="ro">Structura paginii</span></h3>
+      <p class="i18n"><span class="ro">Ordinea blocurilor: ofertă, beneficii, preț, recenzii (dacă există), CTA. Fiecare bloc mută vizitatorul spre acțiune.</span></p>
+      <div class="stage-duration i18n"><span class="ro">1–2 ZILE</span></div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num i18n"><span class="ro">ETAPA 04</span></div>
+      <h3 class="i18n"><span class="ro">Design</span></h3>
+      <p class="i18n"><span class="ro">Stil vizual adaptat brandului dvs., adaptare completă pentru mobil — majoritatea vizitatorilor vin de pe telefon.</span></p>
+      <div class="stage-duration i18n"><span class="ro">2–3 ZILE</span></div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num i18n"><span class="ro">ETAPA 05</span></div>
+      <h3 class="i18n"><span class="ro">Layout și texte</span></h3>
+      <p class="i18n"><span class="ro">Verstăm pagina, o umplem cu texte și fotografii reale, conectăm formularul de comandă / programare.</span></p>
+      <div class="stage-duration i18n"><span class="ro">2–4 ZILE</span></div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-num i18n"><span class="ro">ETAPA 06</span></div>
+      <h3 class="i18n"><span class="ro">Lansare</span></h3>
+      <p class="i18n"><span class="ro">Publicăm pagina, conectăm analitica și notificările, transferăm toate accesele.</span></p>
+      <div class="stage-duration i18n"><span class="ro">TOTAL: 1–2 SĂPTĂMÂNI</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 03 : WHAT'S INCLUDED -->
+<section id="included" data-layer="2" data-label-ro="LAYER 03 / PACHET" data-label-ru="УРОВЕНЬ 03 / ПАКЕТ">
+  <div class="layer-tag">03 / 06</div>
+  <div class="section-head">
+    <div class="label-mono i18n"><span class="ro">CE PRIMIȚI</span></div>
+    <h2 class="i18n"><span class="ro">Ce intră în fiecare proiect</span></h2>
+    <p class="sub i18n">
+      <span class="ro">Un magazin local, un salon de înfrumusețare sau un antrenor personal — oricine are nevoie de o pagină clară pentru a primi comenzi online, fără complexitatea unui site mare.</span>
+      
+    </p>
+  </div>
+  <div class="text-photo-grid">
+    <picture><source srcset="../../img/363.webp" type="image/webp"><img src="../../img/363.jpg" alt="Landing page pentru afaceri mici" loading="lazy"></picture>
+    <div>
+      <div class="spec-list i18n"><span class="ro">STRUCTURĂ..: <b>Ofertă, beneficii, preț, CTA</b>
+FORMULAR...: <b>Comandă / programare rapidă</b>
+LANSARE....: <b>1–2 săptămâni</b>
+LIMBI......: <b>RO/RU, adaptiv mobil</b>
+DESIGN.....: <b>Unic, adaptat brandului dvs.</b></span></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 04 : PORTFOLIO EXAMPLES -->
+<section id="portfolio-examples" data-layer="3" data-label-ro="LAYER 04 / EXEMPLE" data-label-ru="УРОВЕНЬ 04 / ПРИМЕРЫ">
+  <div class="layer-tag">04 / 06</div>
+  <div class="section-head">
+    <div class="label-mono i18n"><span class="ro">EXEMPLE DE LUCRĂRI</span></div>
+    <h2 class="i18n"><span class="ro">Landing page-uri gata</span></h2>
+    <p class="sub i18n">
+      <span class="ro">Două proiecte reale — vedeți cum arată în practică.</span>
+
+    </p>
+  </div>
+  <div class="cards cols-2">
+    <a class="card" href="https://igoriok37.github.io/vyazaika/" target="_blank" rel="noopener">
+      <picture><source srcset="../../img/portfolio-vyazaika.webp" type="image/webp"><img src="../../img/portfolio-vyazaika.jpg" alt="Вязайка — landing page pentru un maestru hand-made"></picture>
+      <div class="meta i18n">
+        <div><span class="k">[PROJECT:</span> <span class="v">Вязайка]</span></div>
+
+        <div class="ro"><span class="k">[SECTOR:</span> <span class="v">HANDMADE, BRAND PERSONAL]</span></div>
+
+        <div class="ro"><span class="k">[SCOPE:</span> <span class="v">Landing page cu galerie de lucrări</span></div>
+
+      </div>
+    </a>
+    <a class="card wide" href="https://igoriok37.github.io/Depolpromo/" target="_blank" rel="noopener">
+      <picture><source srcset="../../img/portfolio-depolpromo.webp" type="image/webp"><img src="../../img/portfolio-depolpromo.jpg" alt="Depol Promo — landing page tipografie"></picture>
+      <div class="meta i18n">
+        <div><span class="k">[PROJECT:</span> <span class="v">Depol Promo]</span></div>
+
+        <div class="ro"><span class="k">[SECTOR:</span> <span class="v">POLIGRAFIE, TIPOGRAFIE]</span></div>
+
+        <div class="ro"><span class="k">[SCOPE:</span> <span class="v">Landing page cu catalog de servicii</span></div>
+
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- LAYER 05 : PACKAGES -->
+<section id="packages" data-layer="4" data-label-ro="LAYER 05 / PREȚURI" data-label-ru="УРОВЕНЬ 05 / СТОИМОСТЬ">
+  <div class="layer-tag">05 / 06</div>
+  <div class="section-head">
+    <div class="label-mono i18n"><span class="ro">COST</span></div>
+    <h2 class="i18n"><span class="ro">Trei pachete</span></h2>
+    <p class="sub i18n">
+      <span class="ro">Alegeți ce aveți nevoie.</span>
+      
+    </p>
+  </div>
+  <div class="package-grid">
+    <div class="package-card">
+      <div class="package-name i18n"><span class="ro">MINI-LANDING</span></div>
+      <div class="package-price">350 €</div>
+      <p class="package-desc i18n"><span class="ro">O singură ofertă — direct la subiect.</span></p>
+      <ul class="package-list i18n">
+        <li class="ro">Ofertă, beneficii, preț, CTA</li>
+        <li class="ro">Formular de comandă / programare</li>
+        <li class="ro">Adaptiv mobil</li>
+        <li class="ro">SEO de bază</li>
+      </ul>
+      <a href="contacts.html" class="cta outline i18n"><span class="ro">COMANDAȚI →</span></a>
+    </div>
+    <div class="package-card featured">
+      <div class="package-badge i18n"><span class="ro">POPULAR</span></div>
+      <div class="package-name i18n"><span class="ro">STANDARD</span></div>
+      <div class="package-price">500 €</div>
+      <p class="package-desc i18n"><span class="ro">Cu blocuri suplimentare de încredere.</span></p>
+      <ul class="package-list i18n">
+        <li class="ro">Tot din pachetul „Mini-landing"</li>
+        <li class="ro">Bloc recenzii / galerie foto</li>
+        <li class="ro">Secțiune FAQ</li>
+        <li class="ro">Notificări Telegram, analitică</li>
+      </ul>
+      <a href="contacts.html" class="cta i18n"><span class="ro">COMANDAȚI →</span></a>
+    </div>
+    <div class="package-card">
+      <div class="package-name i18n"><span class="ro">MULTI-OFERTĂ</span></div>
+      <div class="package-price"><span class="i18n"><span class="ro">de la 600 €</span></span></div>
+      <p class="package-desc i18n"><span class="ro">Pentru câteva servicii sau produse pe o singură pagină.</span></p>
+      <ul class="package-list i18n">
+        <li class="ro">Tot din pachetul „Standard"</li>
+        <li class="ro">Bloc separat pentru fiecare ofertă</li>
+        <li class="ro">Tabel de prețuri extins</li>
+        <li class="ro">Formular cu câmpuri suplimentare</li>
+      </ul>
+      <a href="contacts.html" class="cta outline i18n"><span class="ro">DISCUTAȚI →</span></a>
+    </div>
+  </div>
+  <p class="price-note i18n" style="text-align:center;margin-top:28px;"><span class="ro">Prețurile sunt pentru un site static. Construcție pe WordPress: <b>+30–50%</b> la prețul pachetului ales.</span></p>
+</section>
+
+<!-- LAYER 06 : FAQ + CTA -->
+<section id="faq" data-layer="5" data-label-ro="LAYER 06 / ÎNTREBĂRI" data-label-ru="УРОВЕНЬ 06 / ВОПРОСЫ">
+  <div class="layer-tag">06 / 06</div>
+  <div class="section-head">
+    <div class="label-mono i18n"><span class="ro">ÎNTREBĂRI FRECVENTE</span></div>
+    <h2 class="i18n"><span class="ro">Ce se întreabă</span></h2>
+  </div>
+  <div class="text-photo-grid">
+    <div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q i18n"><span class="ro">CU CE SE DEOSEBEȘTE LANDING-UL DE UN SITE?</span></div>
+          <div class="faq-a i18n"><span class="ro">Landing-ul e o singură pagină cu o singură ofertă clară. E mai ieftin, se lansează mai repede și e potrivit când vindeți un lucru concret.</span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q i18n"><span class="ro">SE POATE EXTINDE ULTERIOR LA UN SITE COMPLET?</span></div>
+          <div class="faq-a i18n"><span class="ro">Da. Multe afaceri încep cu un landing și îl extind mai târziu. Vedeți <a href="portal.html">detalii despre site-ul corporativ</a>.</span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q i18n"><span class="ro">AM NEVOIE DE FOTOGRAFII ȘI TEXTE PROPRII?</span></div>
+          <div class="faq-a i18n"><span class="ro">De dorit, dar nu obligatoriu. Putem folosi fotografii de stoc verificate și vă ajutăm cu textele pe baza brief-ului.</span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q i18n"><span class="ro">CE METODE DE CONTACT SE POT CONECTA?</span></div>
+          <div class="faq-a i18n"><span class="ro">Formular clasic, bot Telegram, link WhatsApp sau email — alegeți ce folosiți deja.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-photo-panel">
+      <picture><source srcset="../../img/372.webp" type="image/webp"><img src="../../img/372.jpg" alt="Consultație"></picture>
+      <div class="cta-box">
+        <h3 class="i18n"><span class="ro">Gata să discutăm landing-ul?</span></h3>
+        <p class="i18n">
+          <span class="ro">Scrieți în Telegram sau completați formularul. Răspundem azi.</span>
+          
+        </p>
+        <a href="contacts.html" class="cta i18n"><span class="ro">SCRIEȚI DESPRE LANDING →</span></a>
+        <p class="note-muted i18n">
+          <span class="ro">Consultație gratuită · Fără obligații</span>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>WEBONIX © 2026</span>
+  <span>CHIȘINĂU, MOLDOVA</span>
+</footer>
+
+<script src="../../design-system/vendor/lenis.min.js"></script>
+<script src="../../design-system/vendor/gsap.min.js"></script>
+<script src="../../design-system/vendor/ScrollTrigger.min.js"></script>
+<script src="../../design-system/core.js"></script>
+<script>
+  WEBONIX.initAll();
+</script>
+</body>
+</html>

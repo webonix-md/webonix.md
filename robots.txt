@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://webonix-md.github.io/webonix.md/sitemap.xml
+Sitemap: https://webonix.md/sitemap.xml

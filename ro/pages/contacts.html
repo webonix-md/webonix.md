@@ -14,6 +14,7 @@
 <style>
   #contact{background:#050505;}
   #faq{background:#000;}
+  #contact .section-head h1{font-size:var(--fs-h2);}
 </style>
 <link rel="canonical" href="https://webonix.md/ro/pages/contacts.html">
 <link rel="alternate" hreflang="ru" href="https://webonix.md/pages/contacts.html">
@@ -34,28 +35,47 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/ro/index.html",
-  "description": "Dezvoltăm site-uri corporative, identitate vizuală și landing page-uri pentru afaceri din Moldova de orice dimensiune. Contract, termene fixe, transferul tuturor acceselor.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://webonix.md/ro/pages/contacts.html#webpage",
+      "url": "https://webonix.md/ro/pages/contacts.html",
+      "name": "WEBONIX — Contacte",
+      "description": "Contactați echipa Webonix — site-uri, landing page-uri și identitate vizuală. Chișinău, Moldova.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -131,7 +151,7 @@
   <div class="layer-tag">01 / 02</div>
   <div class="section-head">
     <div class="label-mono i18n"><span class="ro">CONTACTE</span></div>
-    <h2 class="i18n"><span class="ro">Scrieți-ne</span></h2>
+    <h1 class="i18n"><span class="ro">Scrieți-ne</span></h1>
     <p class="sub i18n"><span class="ro">Răspundem azi.</span></p>
   </div>
   <div class="text-photo-grid align-start">

@@ -43,20 +43,90 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": { "@type": "Country", "name": "Moldova" },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": ["ru", "ro"]
-  },
-  "sameAs": ["https://t.me/webonixmd"],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/pages/blog/commercial-offer-mistakes.html#webpage",
+      "url": "https://webonix.md/pages/blog/commercial-offer-mistakes.html",
+      "name": "Как коммерческое предложение теряет клиентов ещё до звонка — WEBONIX",
+      "description": "КП чаще всего проваливается не из-за цены, а из-за того, что его структура не отвечает на вопрос «почему именно вы».",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/pages/blog/commercial-offer-mistakes.html#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://webonix.md/pages/blog/commercial-offer-mistakes.html#article",
+      "headline": "Как коммерческое предложение теряет клиентов ещё до звонка",
+      "description": "КП чаще всего проваливается не из-за цены, а из-за того, что его структура не отвечает на вопрос «почему именно вы».",
+      "image": "https://webonix.md/img/blog-offer.jpg",
+      "articleSection": "МАРКЕТИНГ",
+      "inLanguage": "ru",
+      "mainEntityOfPage": {
+        "@id": "https://webonix.md/pages/blog/commercial-offer-mistakes.html#webpage"
+      },
+      "publisher": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "author": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "datePublished": "2026-05-30"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/pages/blog/commercial-offer-mistakes.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ГЛАВНАЯ",
+          "item": "https://webonix.md/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "БЛОГ",
+          "item": "https://webonix.md/pages/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как коммерческое предложение теряет клиентов ещё до звонка",
+          "item": "https://webonix.md/pages/blog/commercial-offer-mistakes.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

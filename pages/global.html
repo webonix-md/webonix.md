@@ -46,28 +46,119 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/pages/global.html#webpage",
+      "url": "https://webonix.md/pages/global.html",
+      "name": "WEBONIX — Разработка сайта для экспортёров",
+      "description": "Разработка сайтов для компаний-экспортёров из Молдовы. Этапы, сроки, цены.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/pages/global.html#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://webonix.md/pages/global.html#service",
+      "name": "Сайт для экспортёров",
+      "description": "Разработка сайтов для компаний-экспортёров из Молдовы. Этапы, сроки, цены.",
+      "provider": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "БАЗОВЫЙ",
+          "url": "https://webonix.md/pages/global.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1000,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "РАСШИРЕННЫЙ",
+          "url": "https://webonix.md/pages/global.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1400,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "ПОД КЛЮЧ",
+          "url": "https://webonix.md/pages/global.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1800,
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/pages/global.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ГЛАВНАЯ",
+          "item": "https://webonix.md/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "УСЛУГИ",
+          "item": "https://webonix.md/pages/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Сайт для экспортёров",
+          "item": "https://webonix.md/pages/global.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

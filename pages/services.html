@@ -59,28 +59,47 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://webonix.md/pages/services.html#webpage",
+      "url": "https://webonix.md/pages/services.html",
+      "name": "WEBONIX — Услуги и цены",
+      "description": "Корпоративные сайты, лендинги, логотипы и фирменный стиль для бизнеса любого масштаба. Договор, документы, передача всех доступов.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      }
+    }
+  ]
 }
 </script>
 </head>

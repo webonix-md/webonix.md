@@ -62,28 +62,56 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://webonix.md/#website",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "publisher": {
+        "@id": "https://webonix.md/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/index.html#webpage",
+      "url": "https://webonix.md/index.html",
+      "name": "WEBONIX — Сайты, фирменный стиль и лендинги, Молдова",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -347,7 +375,7 @@
   </div>
   <div class="text-photo-grid vp-row">
     <div class="vp-media">
-      <video muted loop autoplay playsinline preload="metadata">
+      <video muted loop playsinline preload="metadata">
         <source src="video/een4.mp4" type="video/mp4">
       </video>
     </div>
@@ -360,7 +388,7 @@
   </div>
   <div class="text-photo-grid vp-row reverse">
     <div class="vp-media">
-      <video muted loop autoplay playsinline preload="metadata">
+      <video muted loop playsinline preload="metadata">
         <source src="video/ecklet4.mp4" type="video/mp4">
       </video>
     </div>
@@ -373,7 +401,7 @@
   </div>
   <div class="text-photo-grid vp-row">
     <div class="vp-media">
-      <video muted loop autoplay playsinline preload="metadata">
+      <video muted loop playsinline preload="metadata">
         <source src="video/niko4.mp4" type="video/mp4">
       </video>
     </div>
@@ -386,7 +414,7 @@
   </div>
   <div class="text-photo-grid vp-row reverse">
     <div class="vp-media">
-      <video muted loop autoplay playsinline preload="metadata">
+      <video muted loop playsinline preload="metadata">
         <source src="video/vyazaika4.mp4" type="video/mp4">
       </video>
     </div>

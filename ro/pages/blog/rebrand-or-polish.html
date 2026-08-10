@@ -43,20 +43,90 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": { "@type": "Country", "name": "Moldova" },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": ["ru", "ro"]
-  },
-  "sameAs": ["https://t.me/webonixmd"],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/ro/pages/blog/rebrand-or-polish.html#webpage",
+      "url": "https://webonix.md/ro/pages/blog/rebrand-or-polish.html",
+      "name": "Cum înțelegeți că brandul are nevoie de un rebranding, nu de cosmetică — WEBONIX",
+      "description": "Trei semne că problema nu e un logo învechit, ci însăși structura identității — și de ce asta schimbă tot volumul de lucru.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/ro/pages/blog/rebrand-or-polish.html#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://webonix.md/ro/pages/blog/rebrand-or-polish.html#article",
+      "headline": "Cum înțelegeți că brandul are nevoie de un rebranding, nu de cosmetică",
+      "description": "Trei semne că problema nu e un logo învechit, ci însăși structura identității — și de ce asta schimbă tot volumul de lucru.",
+      "image": "https://webonix.md/img/blog-rebrand.jpg",
+      "articleSection": "BRANDING",
+      "inLanguage": "ro",
+      "mainEntityOfPage": {
+        "@id": "https://webonix.md/ro/pages/blog/rebrand-or-polish.html#webpage"
+      },
+      "publisher": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "author": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "datePublished": "2026-06-02"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/ro/pages/blog/rebrand-or-polish.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ACASĂ",
+          "item": "https://webonix.md/ro/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "BLOG",
+          "item": "https://webonix.md/ro/pages/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cum înțelegeți că brandul are nevoie de un rebranding, nu de cosmetică",
+          "item": "https://webonix.md/ro/pages/blog/rebrand-or-polish.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

@@ -43,20 +43,90 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": { "@type": "Country", "name": "Moldova" },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": ["ru", "ro"]
-  },
-  "sameAs": ["https://t.me/webonixmd"],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/ro/pages/blog/landing-vs-corporate.html#webpage",
+      "url": "https://webonix.md/ro/pages/blog/landing-vs-corporate.html",
+      "name": "Landing page sau site de prezentare: ce alegeți pentru start — WEBONIX",
+      "description": "Nu „ce e mai bine”, ci „ce vă rezolvă sarcina” — analizăm pe scenarii concrete când e justificat fiecare format.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/ro/pages/blog/landing-vs-corporate.html#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://webonix.md/ro/pages/blog/landing-vs-corporate.html#article",
+      "headline": "Landing page sau site de prezentare: ce alegeți pentru start",
+      "description": "Nu „ce e mai bine”, ci „ce vă rezolvă sarcina” — analizăm pe scenarii concrete când e justificat fiecare format.",
+      "image": "https://webonix.md/img/blog-landing.jpg",
+      "articleSection": "DESIGN WEB",
+      "inLanguage": "ro",
+      "mainEntityOfPage": {
+        "@id": "https://webonix.md/ro/pages/blog/landing-vs-corporate.html#webpage"
+      },
+      "publisher": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "author": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "datePublished": "2026-04-28"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/ro/pages/blog/landing-vs-corporate.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ACASĂ",
+          "item": "https://webonix.md/ro/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "BLOG",
+          "item": "https://webonix.md/ro/pages/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Landing page sau site de prezentare: ce alegeți pentru start",
+          "item": "https://webonix.md/ro/pages/blog/landing-vs-corporate.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

@@ -43,28 +43,119 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/pages/materials.html#webpage",
+      "url": "https://webonix.md/pages/materials.html",
+      "name": "WEBONIX — Брендированные материалы: презентации, флаеры, баннеры, объекты",
+      "description": "Изготавливаем презентации, флаеры, баннеры и брендированные объекты (кружки, футболки) в вашем существующем стиле — даже если айдентика делалась в другом месте. Молдова.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/pages/materials.html#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://webonix.md/pages/materials.html#service",
+      "name": "Материалы бренда",
+      "description": "Изготавливаем презентации, флаеры, баннеры и брендированные объекты (кружки, футболки) в вашем существующем стиле — даже если айдентика делалась в другом месте. Молдова.",
+      "provider": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "ОДИН МАТЕРИАЛ",
+          "url": "https://webonix.md/pages/materials.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 80,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "БАЗОВЫЙ НАБОР",
+          "url": "https://webonix.md/pages/materials.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 250,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "ПОЛНЫЙ НАБОР + ПРЕДМЕТЫ",
+          "url": "https://webonix.md/pages/materials.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 400,
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/pages/materials.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ГЛАВНАЯ",
+          "item": "https://webonix.md/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "УСЛУГИ",
+          "item": "https://webonix.md/pages/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Материалы бренда",
+          "item": "https://webonix.md/pages/materials.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

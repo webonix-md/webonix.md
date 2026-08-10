@@ -43,20 +43,90 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": { "@type": "Country", "name": "Moldova" },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": ["ru", "ro"]
-  },
-  "sameAs": ["https://t.me/webonixmd"],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/pages/blog/logo-vs-identity.html#webpage",
+      "url": "https://webonix.md/pages/blog/logo-vs-identity.html",
+      "name": "Логотип vs фирменный стиль: в чём разница и почему это не одно и то же — WEBONIX",
+      "description": "Логотип — это знак. Фирменный стиль — это правила, по которым он живёт во всех остальных материалах. Путаница между ними стоит бизнесу денег.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/pages/blog/logo-vs-identity.html#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://webonix.md/pages/blog/logo-vs-identity.html#article",
+      "headline": "Логотип vs фирменный стиль: в чём разница и почему это не одно и то же",
+      "description": "Логотип — это знак. Фирменный стиль — это правила, по которым он живёт во всех остальных материалах. Путаница между ними стоит бизнесу денег.",
+      "image": "https://webonix.md/img/blog-logo.jpg",
+      "articleSection": "БРЕНДИНГ",
+      "inLanguage": "ru",
+      "mainEntityOfPage": {
+        "@id": "https://webonix.md/pages/blog/logo-vs-identity.html#webpage"
+      },
+      "publisher": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "author": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "datePublished": "2026-05-14"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/pages/blog/logo-vs-identity.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ГЛАВНАЯ",
+          "item": "https://webonix.md/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "БЛОГ",
+          "item": "https://webonix.md/pages/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Логотип vs фирменный стиль: в чём разница и почему это не одно и то же",
+          "item": "https://webonix.md/pages/blog/logo-vs-identity.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

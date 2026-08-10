@@ -43,20 +43,90 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": { "@type": "Country", "name": "Moldova" },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": ["ru", "ro"]
-  },
-  "sameAs": ["https://t.me/webonixmd"],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/pages/blog/website-types.html#webpage",
+      "url": "https://webonix.md/pages/blog/website-types.html",
+      "name": "Какие бывают сайты: виды и для какой задачи подходит каждый — WEBONIX",
+      "description": "Лендинг, сайт-визитка, корпоративный портал, сайт для экспортёров — разбираем, чем они отличаются и как не ошибиться с выбором формата.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/pages/blog/website-types.html#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://webonix.md/pages/blog/website-types.html#article",
+      "headline": "Какие бывают сайты: виды и для какой задачи подходит каждый",
+      "description": "Лендинг, сайт-визитка, корпоративный портал, сайт для экспортёров — разбираем, чем они отличаются и как не ошибиться с выбором формата.",
+      "image": "https://webonix.md/img/366.jpg",
+      "articleSection": "ВЕБ-ДИЗАЙН",
+      "inLanguage": "ru",
+      "mainEntityOfPage": {
+        "@id": "https://webonix.md/pages/blog/website-types.html#webpage"
+      },
+      "publisher": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "author": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "datePublished": "2026-07-15"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/pages/blog/website-types.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ГЛАВНАЯ",
+          "item": "https://webonix.md/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "БЛОГ",
+          "item": "https://webonix.md/pages/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Какие бывают сайты: виды и для какой задачи подходит каждый",
+          "item": "https://webonix.md/pages/blog/website-types.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

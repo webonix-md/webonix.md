@@ -44,28 +44,110 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/pages/logo.html#webpage",
+      "url": "https://webonix.md/pages/logo.html",
+      "name": "WEBONIX — Разработка логотипа и фирменного стиля",
+      "description": "Разработка логотипа и фирменного стиля для бизнеса из Молдовы. Этапы, сроки, цены.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/pages/logo.html#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://webonix.md/pages/logo.html#service",
+      "name": "Логотип",
+      "description": "Разработка логотипа и фирменного стиля для бизнеса из Молдовы. Этапы, сроки, цены.",
+      "provider": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "ЛОГОТИП",
+          "url": "https://webonix.md/pages/logo.html",
+          "price": "150",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "ЛОГОТИП РАСШИРЕННЫЙ",
+          "url": "https://webonix.md/pages/logo.html",
+          "price": "250",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "СТИЛЬ + ЛЕНДИНГ",
+          "url": "https://webonix.md/pages/logo.html",
+          "price": "550",
+          "priceCurrency": "EUR"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/pages/logo.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ГЛАВНАЯ",
+          "item": "https://webonix.md/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "УСЛУГИ",
+          "item": "https://webonix.md/pages/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Логотип",
+          "item": "https://webonix.md/pages/logo.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

@@ -46,28 +46,63 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/ro/index.html",
-  "description": "Dezvoltăm site-uri corporative, identitate vizuală și landing page-uri pentru afaceri din Moldova de orice dimensiune. Contract, termene fixe, transferul tuturor acceselor.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/ro/pages/audit.html#webpage",
+      "url": "https://webonix.md/ro/pages/audit.html",
+      "name": "WEBONIX — Audit gratuit al site-ului",
+      "description": "Analiză gratuită a site-ului dvs.: viteză, versiune mobilă, erori de indexare, concurenți. Moldova.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/ro/pages/audit.html#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://webonix.md/ro/pages/audit.html#service",
+      "name": "Analiză gratuită a site-ului dvs.",
+      "description": "Analiză gratuită a site-ului dvs.: viteză, versiune mobilă, erori de indexare, concurenți. Moldova.",
+      "provider": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      }
+    }
+  ]
 }
 </script>
 </head>

@@ -42,28 +42,110 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/ro/index.html",
-  "description": "Dezvoltăm site-uri corporative, identitate vizuală și landing page-uri pentru afaceri din Moldova de orice dimensiune. Contract, termene fixe, transferul tuturor acceselor.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/ro/pages/identity.html#webpage",
+      "url": "https://webonix.md/ro/pages/identity.html",
+      "name": "WEBONIX — Identitate vizuală și brandbook",
+      "description": "Dezvoltarea identității vizuale pentru afaceri din Moldova: culori, tipografie, brandbook, vizite și antete. Etape, termene, prețuri.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/ro/pages/identity.html#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://webonix.md/ro/pages/identity.html#service",
+      "name": "Identitate vizuală",
+      "description": "Dezvoltarea identității vizuale pentru afaceri din Moldova: culori, tipografie, brandbook, vizite și antete. Etape, termene, prețuri.",
+      "provider": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "IDENTITATE DE BAZĂ",
+          "url": "https://webonix.md/ro/pages/identity.html",
+          "price": "300",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "IDENTITATE + ȘABLOANE",
+          "url": "https://webonix.md/ro/pages/identity.html",
+          "price": "450",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "IDENTITATE + LANDING",
+          "url": "https://webonix.md/ro/pages/identity.html",
+          "price": "550",
+          "priceCurrency": "EUR"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/ro/pages/identity.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ACASĂ",
+          "item": "https://webonix.md/ro/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SERVICII",
+          "item": "https://webonix.md/ro/pages/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Identitate vizuală",
+          "item": "https://webonix.md/ro/pages/identity.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

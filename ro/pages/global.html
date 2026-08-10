@@ -46,28 +46,119 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/ro/index.html",
-  "description": "Dezvoltăm site-uri corporative, identitate vizuală și landing page-uri pentru afaceri din Moldova de orice dimensiune. Contract, termene fixe, transferul tuturor acceselor.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Moldova"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": [
-      "ru",
-      "ro"
-    ]
-  },
-  "sameAs": [
-    "https://t.me/webonixmd"
-  ],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/ro/pages/global.html#webpage",
+      "url": "https://webonix.md/ro/pages/global.html",
+      "name": "WEBONIX — Dezvoltare site pentru exportatori",
+      "description": "Dezvoltarea site-urilor pentru companii exportatoare din Moldova. Etape, termene, prețuri.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "about": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/ro/pages/global.html#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://webonix.md/ro/pages/global.html#service",
+      "name": "Site pentru exportatori",
+      "description": "Dezvoltarea site-urilor pentru companii exportatoare din Moldova. Etape, termene, prețuri.",
+      "provider": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "DE BAZĂ",
+          "url": "https://webonix.md/ro/pages/global.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1000,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "EXTINS",
+          "url": "https://webonix.md/ro/pages/global.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1400,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "LA CHEIE",
+          "url": "https://webonix.md/ro/pages/global.html",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1800,
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/ro/pages/global.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ACASĂ",
+          "item": "https://webonix.md/ro/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SERVICII",
+          "item": "https://webonix.md/ro/pages/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Site pentru exportatori",
+          "item": "https://webonix.md/ro/pages/global.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

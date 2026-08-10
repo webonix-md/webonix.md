@@ -43,20 +43,90 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Webonix",
-  "url": "https://webonix.md/index.html",
-  "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
-  "areaServed": { "@type": "Country", "name": "Moldova" },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+373-79-508-887",
-    "contactType": "customer service",
-    "areaServed": "MD",
-    "availableLanguage": ["ru", "ro"]
-  },
-  "sameAs": ["https://t.me/webonixmd"],
-  "logo": "https://webonix.md/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webonix.md/#organization",
+      "name": "Webonix",
+      "url": "https://webonix.md/index.html",
+      "description": "Разрабатываем корпоративные сайты, фирменный стиль и лендинги для бизнеса из Молдовы любого масштаба. Договор, чёткие сроки, передача всех доступов.",
+      "logo": "https://webonix.md/apple-touch-icon.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Moldova"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+373-79-508-887",
+        "contactType": "customer service",
+        "areaServed": "MD",
+        "availableLanguage": [
+          "ru",
+          "ro"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/webonixmd"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://webonix.md/ro/pages/blog/commercial-offer-mistakes.html#webpage",
+      "url": "https://webonix.md/ro/pages/blog/commercial-offer-mistakes.html",
+      "name": "Cum o ofertă comercială pierde clienți încă înainte de apel — WEBONIX",
+      "description": "Oferta comercială eșuează cel mai des nu din cauza prețului, ci pentru că structura ei nu răspunde la întrebarea „de ce anume voi”.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://webonix.md/#website"
+      },
+      "mainEntity": {
+        "@id": "https://webonix.md/ro/pages/blog/commercial-offer-mistakes.html#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://webonix.md/ro/pages/blog/commercial-offer-mistakes.html#article",
+      "headline": "Cum o ofertă comercială pierde clienți încă înainte de apel",
+      "description": "Oferta comercială eșuează cel mai des nu din cauza prețului, ci pentru că structura ei nu răspunde la întrebarea „de ce anume voi”.",
+      "image": "https://webonix.md/img/blog-offer.jpg",
+      "articleSection": "MARKETING",
+      "inLanguage": "ro",
+      "mainEntityOfPage": {
+        "@id": "https://webonix.md/ro/pages/blog/commercial-offer-mistakes.html#webpage"
+      },
+      "publisher": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "author": {
+        "@id": "https://webonix.md/#organization"
+      },
+      "datePublished": "2026-05-30"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://webonix.md/ro/pages/blog/commercial-offer-mistakes.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ACASĂ",
+          "item": "https://webonix.md/ro/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "BLOG",
+          "item": "https://webonix.md/ro/pages/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cum o ofertă comercială pierde clienți încă înainte de apel",
+          "item": "https://webonix.md/ro/pages/blog/commercial-offer-mistakes.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

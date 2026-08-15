@@ -162,6 +162,8 @@ section div h2{font-size: var(--fs-h3);}
 .section-head{max-width:1100px;}
 .section-head h2{font-size:var(--fs-h2);}
 .section-head .sub{max-width:1100px;margin-top:16px;font-family:var(--mono);font-size:var(--fs-sub);color:var(--text7);line-height:1.6;}
+.section-head .sub a{color:var(--cyan);}
+.section-head .sub a:hover{color:var(--mint);}
 .section-head.full{max-width:100%;}
 .section-head.centered{margin:0 auto;text-align:center;}
 

@@ -28,6 +28,15 @@
   #video-portfolio .text-photo-grid .sub{font-family:var(--mono);font-size:var(--fs-sub);line-height:1.6;margin:0 0 20px;}
   #video-portfolio .vp-link{display:inline-flex;align-items:center;color:var(--cyan);text-decoration:none;font-family:var(--mono);font-size:var(--fs-cta);text-transform:uppercase;letter-spacing:.08em;transition:color .2s;}
   #video-portfolio .vp-link:hover{color:var(--mint);}
+  #testimonials{background:#000;}
+  #testimonials .package-grid{grid-template-columns:repeat(2,1fr);}
+  #testimonials .package-card{color:var(--fg);text-decoration:none;transition:border-color .2s;}
+  #testimonials .package-card:hover{border-color:var(--cyan);}
+  #testimonials .package-desc{color:var(--text9);}
+  #testimonials blockquote{margin:0;}
+  #testimonials cite{font-style:normal;}
+  #testimonials .vp-link{display:inline-flex;align-items:center;color:var(--cyan);text-decoration:none;font-family:var(--mono);font-size:var(--fs-cta);text-transform:uppercase;letter-spacing:.08em;transition:color .2s;margin-top:20px;}
+  #testimonials .package-card:hover .vp-link{color:var(--mint);}
   #process{background:#050505;}
   #contact{
     background:linear-gradient(290deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.88) 45%, rgba(0,0,0,1) 100%),
@@ -189,7 +198,7 @@
 <main>
 <!-- LAYER 01 : HERO -->
 <section id="hero" class="hero-section" data-layer="0" data-label-ro="LAYER 01 / CORE" data-label-ru="УРОВЕНЬ 01 / ЯДРО">
-  <div class="layer-tag">01 / 08</div>
+  <div class="layer-tag">01 / 09</div>
   <div class="inner">
     <div class="hero-badge i18n">
       <span class="dot"></span>
@@ -224,7 +233,7 @@
 
 <!-- LAYER 02 : SOLUTIONS -->
 <section id="solutions" data-layer="1" data-label-ro="LAYER 02 / PUNCT DE START" data-label-ru="УРОВЕНЬ 02 / ТОЧКА СТАРТА">
-  <div class="layer-tag">02 / 08</div>
+  <div class="layer-tag">02 / 09</div>
   <div class="section-head">
     <h2 class="i18n"><span class="ru">Точка старта</span></h2>
     <p class="sub i18n">
@@ -265,7 +274,7 @@
 
 <!-- LAYER 03 : WHY -->
 <section id="why" data-layer="2" data-label-ro="LAYER 03 / AVANTAJE SISTEM" data-label-ru="УРОВЕНЬ 03 / ПРЕИМУЩЕСТВА">
-  <div class="layer-tag">03 / 08</div>
+  <div class="layer-tag">03 / 09</div>
   <div class="section-head">
     <h2 class="i18n"><span class="ru">Почему выбирают нас</span></h2>
     <p class="sub i18n">
@@ -319,7 +328,7 @@
 
 <!-- LAYER 04 : PORTFOLIO -->
 <section id="portfolio" data-layer="3" data-label-ro="LAYER 04 / PROIECTE LIVRATE" data-label-ru="УРОВЕНЬ 04 / ПОРТФОЛИО">
-  <div class="layer-tag">04 / 08</div>
+  <div class="layer-tag">04 / 09</div>
   <div class="section-head">
     <h2 class="i18n"><span class="ru">Выполненные проекты</span></h2>
     <p class="sub i18n">
@@ -365,7 +374,7 @@
 
 <!-- LAYER 05 : VIDEO PORTFOLIO -->
 <section id="video-portfolio" data-layer="4" data-label-ro="LAYER 05 / VIDEO PROIECTE" data-label-ru="УРОВЕНЬ 05 / ВИДЕО ПРОЕКТОВ">
-  <div class="layer-tag">05 / 08</div>
+  <div class="layer-tag">05 / 09</div>
   <div class="section-head">
     <h2 class="i18n"><span class="ru">Проекты в видео</span></h2>
     <p class="sub i18n">
@@ -376,14 +385,14 @@
   <div class="text-photo-grid vp-row">
     <div class="vp-media">
       <video muted loop playsinline preload="metadata">
-        <source src="video/een4.mp4" type="video/mp4">
+        <source src="video/nado4.mp4" type="video/mp4">
       </video>
     </div>
     <div>
-      <div class="label-mono i18n"><span class="ru">ИНДУСТРИЯ · ONLINE-КАТАЛОГ</span></div>
-      <h3 class="i18n"><span class="ru">ECKLET Engineering</span></h3>
-      <p class="sub i18n"><span class="ru">Интерактивный конструктор каталога — клиент собирает конфигурацию решения прямо на сайте, без звонка менеджеру.</span></p>
-      <a href="https://igoriok37.github.io/een/index.html" target="_blank" rel="noopener" class="vp-link i18n"><span class="ru">Смотреть проект →</span></a>
+      <div class="label-mono i18n"><span class="ru">ДИЗАЙН-СТУДИЯ · ПОРТФОЛИО-САЙТ</span></div>
+      <h3 class="i18n"><span class="ru">NADO Design</span></h3>
+      <p class="sub i18n"><span class="ru">Сайт дизайн-студии полного цикла — анимированное меню услуг и портфолио на одном скролле.</span></p>
+      <a href="https://nado-design.com/" target="_blank" rel="noopener" class="vp-link i18n"><span class="ru">Смотреть проект →</span></a>
     </div>
   </div>
   <div class="text-photo-grid vp-row reverse">
@@ -427,9 +436,34 @@
   </div>
 </section>
 
-<!-- LAYER 06 : ABOUT -->
-<section id="about" data-layer="5" data-label-ro="LAYER 06 / CINE SUNTEM" data-label-ru="УРОВЕНЬ 06 / КТО МЫ">
-  <div class="layer-tag">06 / 08</div>
+<!-- LAYER 06 : TESTIMONIALS -->
+<section id="testimonials" data-layer="5" data-label-ro="LAYER 06 / RECENZII" data-label-ru="УРОВЕНЬ 06 / ОТЗЫВЫ">
+  <div class="layer-tag">06 / 09</div>
+  <div class="section-head">
+    <div class="label-mono i18n"><span class="ru">ОТЗЫВЫ КЛИЕНТОВ</span></div>
+    <h2 class="i18n"><span class="ru">Что говорят о результате</span></h2>
+    <p class="sub i18n">
+
+      <span class="ru">Отзывы с реальных проектов — переходите по ссылке и смотрите сайт своими глазами.</span>
+    </p>
+  </div>
+  <div class="package-grid">
+    <a class="package-card" href="https://webonix-md.github.io/vyazaika/" target="_blank" rel="noopener">
+      <cite class="package-name i18n"><span class="ru">АНЖЕЛА · ВЯЗАЙКА</span></cite>
+      <blockquote class="package-desc i18n"><span class="ru">«Раньше принимала заказы через сторис и переписки — половина терялась. Теперь на сайте сразу видно, что в наличии, а у каждого изделия — своя история. Заказы стали приходить прямо с сайта.»</span></blockquote>
+      <span class="vp-link i18n"><span class="ru">Смотреть проект →</span></span>
+    </a>
+    <a class="package-card" href="https://nado-design.com/" target="_blank" rel="noopener">
+      <cite class="package-name i18n"><span class="ru">ИННА · NADO DESIGN</span></cite>
+      <blockquote class="package-desc i18n"><span class="ru">«Не хотели очередной шаблонный сайт-визитку — нужно было сразу показать уровень студии. Получили именно это: подача, которую хочется долистать до конца, а не закрыть на первом экране.»</span></blockquote>
+      <span class="vp-link i18n"><span class="ru">Смотреть проект →</span></span>
+    </a>
+  </div>
+</section>
+
+<!-- LAYER 07 : ABOUT -->
+<section id="about" data-layer="6" data-label-ro="LAYER 07 / CINE SUNTEM" data-label-ru="УРОВЕНЬ 07 / КТО МЫ">
+  <div class="layer-tag">07 / 09</div>
   <div class="section-head">
     <div class="label-mono i18n"><span class="ru">О НАС</span></div>
     <h2 class="i18n"><span class="ru">Кто стоит за Webonix</span></h2>
@@ -457,9 +491,9 @@
   </div>
 </section>
 
-<!-- LAYER 07 : PROCESS -->
-<section id="process" data-layer="6" data-label-ro="LAYER 07 / PROTOCOL LANSARE" data-label-ru="УРОВЕНЬ 07 / ПРОТОКОЛ ЗАПУСКА">
-  <div class="layer-tag">07 / 08</div>
+<!-- LAYER 08 : PROCESS -->
+<section id="process" data-layer="7" data-label-ro="LAYER 08 / PROTOCOL LANSARE" data-label-ru="УРОВЕНЬ 08 / ПРОТОКОЛ ЗАПУСКА">
+  <div class="layer-tag">08 / 09</div>
   <div class="section-head">
     <h2 class="i18n"><span class="ru">Протокол запуска</span></h2>
     <p class="sub i18n">
@@ -499,9 +533,9 @@
   </p>
 </section>
 
-<!-- LAYER 08 : CONTACT -->
-<section id="contact" data-layer="7" data-label-ro="LAYER 08 / TERMINAL CONTACT" data-label-ru="УРОВЕНЬ 08 / ТЕРМИНАЛ СВЯЗИ">
-  <div class="layer-tag">08 / 08</div>
+<!-- LAYER 09 : CONTACT -->
+<section id="contact" data-layer="8" data-label-ro="LAYER 09 / TERMINAL CONTACT" data-label-ru="УРОВЕНЬ 09 / ТЕРМИНАЛ СВЯЗИ">
+  <div class="layer-tag">09 / 09</div>
   <div class="section-head">
     <h2 class="i18n"><span class="ru">Терминал связи</span></h2>
     <p class="sub i18n">

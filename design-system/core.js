@@ -1,16 +1,15 @@
 /* ==========================================================================
    WEBONIX DESIGN SYSTEM — core.js
    Shared behavior: smooth scroll + reveal, custom cursor, live clock,
-   RO/RU language switch, layer-nav scrollspy, terminal form submit.
+   RO/RU language switch, layer-nav scrollspy.
    Load after Lenis + GSAP + ScrollTrigger CDN scripts. Call WEBONIX.initAll()
-   once the DOM is ready, then wire any page-specific bits (selects, extra
-   forms) with the small helpers exposed on window.WEBONIX.
+   once the DOM is ready, then wire any page-specific bits (selects, etc.)
+   with the small helpers exposed on window.WEBONIX.
    ========================================================================== */
 
 window.WEBONIX = (function(){
   const onLangChange = [];
   let currentSection = 0;
-  const FORM_ENDPOINT = 'https://webonix-form.igorok7312.workers.dev';
 
   function initScroll(){
     try{
@@ -351,50 +350,6 @@ window.WEBONIX = (function(){
     onLangChange.push(render);
   }
 
-  function initTerminalForm(formId, statusId, messages){
-    messages = messages || {
-      ro: { sending: '> TRANSMITTING... ', done: '> STATUS: RECEIVED ✓', error: '> EROARE. Încercați din nou sau scrieți în Telegram.' },
-      ru: { sending: '> ОТПРАВКА... ', done: '> СТАТУС: ПОЛУЧЕНО ✓', error: '> ОШИБКА. Попробуйте ещё раз или напишите в Telegram.' }
-    };
-    const form = document.getElementById(formId);
-    const status = document.getElementById(statusId);
-    if(!form || !status) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      const lang = document.documentElement.getAttribute('data-lang');
-      let bar = 0;
-      const frames = ['█░░░░░░░░░','███░░░░░░░','█████░░░░░','███████░░░','██████████'];
-      status.textContent = messages[lang].sending + frames[0];
-      const iv = setInterval(()=>{
-        bar++;
-        if(bar < frames.length){ status.textContent = messages[lang].sending + frames[bar]; }
-      }, 220);
-
-      const data = new FormData(form);
-      const payload = {
-        name: data.get('name') || '',
-        phone: data.get('phone') || '',
-        url: data.get('url') || '',
-        message: data.get('message') || '',
-        messenger: data.get('messenger') || '',
-        page: document.title
-      };
-
-      fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      }).then(res=>{
-        clearInterval(iv);
-        if(res.ok){ status.textContent = messages[lang].done; form.reset(); }
-        else { status.textContent = messages[lang].error; }
-      }).catch(()=>{
-        clearInterval(iv);
-        status.textContent = messages[lang].error;
-      });
-    });
-  }
-
   function initAll(){
     initScroll();
     initScrollReveal();
@@ -412,7 +367,7 @@ window.WEBONIX = (function(){
 
   return {
     initAll, initScroll, initScrollReveal, initVpReveal, initVpPlayback, initCursor, initClock,
-    initLangSwitch, initLayerNav, initNavToggle, initNavDropdown, initTypewriter, initCarousel3d, switchLang, bindSelectOptions, initTerminalForm,
+    initLangSwitch, initLayerNav, initNavToggle, initNavDropdown, initTypewriter, initCarousel3d, switchLang, bindSelectOptions,
     onLangChange
   };
 })();

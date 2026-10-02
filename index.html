@@ -544,32 +544,17 @@
       <span class="ru">Обсудим ваш проект за 15 минут. Расскажите, что нужно — я подготовлю оценку по срокам и стоимости.</span>
     </p>
   </div>
-  <form class="terminal" id="terminalForm">
-    <label for="name" class="i18n"><span class="ru">> ВАШЕ ИМЯ *</span></label>
-    <input id="name" type="text" name="name" required>
+  <div class="label-mono i18n" style="margin-top:40px;"><span class="ru">НАПИШИТЕ НАМ — ОТВЕТИМ В ТЕЧЕНИЕ ДНЯ</span></div>
+  <div class="cta-row">
+    <a href="https://t.me/webonixmd" class="cta" target="_blank" rel="noopener">TELEGRAM →</a>
+    <a href="viber://chat?number=%2B37379508887" class="cta outline">VIBER →</a>
+    <a href="https://wa.me/37379508887" class="cta outline" target="_blank" rel="noopener">WHATSAPP →</a>
+    <a href="tel:+37379508887" class="cta outline">+373 795 088 87</a>
+  </div>
+  <p class="note-muted i18n">
 
-    <label for="phone" class="i18n"><span class="ru">> ТЕЛЕФОН *</span></label>
-    <input id="phone" type="tel" name="phone" placeholder="+373" required>
-
-    <label for="message" class="i18n"><span class="ru">> КРАТКО ОПИШИТЕ ЗАДАЧУ</span></label>
-    <textarea id="message" name="message" rows="3"></textarea>
-
-    <label class="i18n"><span class="ru">> УДОБНЫЙ МЕССЕНДЖЕР</span></label>
-    <div class="radio-row">
-      <label><input type="radio" name="messenger" value="viber" checked> Viber</label>
-      <label><input type="radio" name="messenger" value="telegram"> Telegram</label>
-      <label><input type="radio" name="messenger" value="whatsapp"> WhatsApp</label>
-    </div>
-
-    <button type="submit" class="submit-btn i18n">
-      <span class="ru">ОТПРАВИТЬ ЗАЯВКУ →</span>
-    </button>
-    <div class="terminal-status" id="terminalStatus"></div>
-    <p class="note-muted i18n">
-      
-      <span class="ru">Отвечаю в течение 2 часов в рабочее время. Данные не передаются третьим лицам.</span>
-    </p>
-  </form>
+    <span class="ru">Отвечаем в течение 2 часов в рабочее время.</span>
+  </p>
 </section>
 
 </main>
@@ -585,7 +570,6 @@
 <script src="design-system/core.js"></script>
 <script>
   WEBONIX.initAll();
-  WEBONIX.initTerminalForm('terminalForm', 'terminalStatus');
 </script>
 </body>
 </html>

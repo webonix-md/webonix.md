@@ -303,35 +303,17 @@
     <h2 class="i18n"><span class="ro">Lăsați cererea</span></h2>
     <p class="sub i18n"><span class="ro">Răspundem azi.</span></p>
   </div>
-  <form class="terminal centered" id="terminalForm">
-    <label for="name" class="i18n"><span class="ro">> NUMELE DVS *</span></label>
-    <input id="name" type="text" name="name" required>
+  <div class="label-mono i18n" style="margin-top:40px;text-align:center;"><span class="ro">TRIMITEȚI LINKUL SITE-ULUI ÎNTR-UN MESAGER — FACEM AUDITUL</span></div>
+  <div class="cta-row" style="justify-content:center;">
+    <a href="https://t.me/webonixmd" class="cta" target="_blank" rel="noopener">TELEGRAM →</a>
+    <a href="viber://chat?number=%2B37379508887" class="cta outline">VIBER →</a>
+    <a href="https://wa.me/37379508887" class="cta outline" target="_blank" rel="noopener">WHATSAPP →</a>
+    <a href="tel:+37379508887" class="cta outline">+373 795 088 87</a>
+  </div>
+  <p class="note-muted i18n" style="text-align:center;">
+    <span class="ro">Răspundem în 2 ore în timpul programului. Auditul — gratuit și fără obligații.</span>
 
-    <label for="url" class="i18n"><span class="ro">> LINK SITE DVS *</span></label>
-    <input id="url" type="url" name="url" placeholder="https://" required>
-
-    <label for="phone" class="i18n"><span class="ro">> TELEFON / TELEGRAM *</span></label>
-    <input id="phone" type="text" name="phone" placeholder="+373" required>
-
-    <label for="message" class="i18n"><span class="ro">> CE VĂ DERANJEAZĂ CEL MAI MULT</span></label>
-    <textarea id="message" name="message" rows="3"></textarea>
-
-    <label class="i18n"><span class="ro">> MESAGER PREFERAT</span></label>
-    <div class="radio-row">
-      <label><input type="radio" name="messenger" value="viber" checked> Viber</label>
-      <label><input type="radio" name="messenger" value="telegram"> Telegram</label>
-      <label><input type="radio" name="messenger" value="whatsapp"> WhatsApp</label>
-    </div>
-
-    <button type="submit" class="submit-btn i18n">
-      <span class="ro">TRIMITEȚI CEREREA DE AUDIT →</span>
-    </button>
-    <div class="terminal-status" id="terminalStatus"></div>
-    <p class="note-muted i18n">
-      <span class="ro">Răspundem în 2 ore în timpul programului. Auditul — gratuit și fără obligații.</span>
-      
-    </p>
-  </form>
+  </p>
 </section>
 
 </main>
@@ -347,7 +329,6 @@
 <script src="../../design-system/core.js"></script>
 <script>
   WEBONIX.initAll();
-  WEBONIX.initTerminalForm('terminalForm', 'terminalStatus');
 </script>
 </body>
 </html>

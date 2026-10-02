@@ -114,6 +114,22 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://webonix.md/pages/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/privacy.html"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://webonix.md/ro/pages/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/privacy.html"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://webonix.md/pages/audit.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/audit.html"/>
     <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/audit.html"/>
@@ -166,7 +182,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/templates.html"/>
     <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/templates.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/templates.html"/>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -174,7 +190,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/templates.html"/>
     <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/templates.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/templates.html"/>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>

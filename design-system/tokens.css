@@ -202,7 +202,8 @@ section div h2{font-size: var(--fs-h3);}
 
 /* ===== CARD GRID (portfolio / listing pattern) ===== */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:50px;/* background:var(--line); */}
-.cards.cols-2{grid-template-columns:repeat(2,1fr);}
+.cards.cols-2{grid-template-columns:repeat(3,1fr);}
+@media (max-width:1280px){.cards{grid-template-columns:repeat(2,1fr);}.cards.cols-2{grid-template-columns:repeat(2,1fr);}}
 @media (max-width:900px){.cards{grid-template-columns:1fr;}.cards.cols-2{grid-template-columns:1fr;}}
 .card{position:relative;aspect-ratio:3/4;background-color:#000;overflow:hidden;}
 a.card{display:block;color:inherit;text-decoration:none;cursor:pointer;}

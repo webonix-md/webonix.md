@@ -214,7 +214,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog.html"/>
     <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog.html"/>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -222,7 +222,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog.html"/>
     <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog.html"/>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -239,6 +239,54 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog/free-audit-explained.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog/free-audit-explained.html"/>
     <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://webonix.md/pages/blog/what-landing-does.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog/what-landing-does.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog/what-landing-does.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog/what-landing-does.html"/>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://webonix.md/ro/pages/blog/what-landing-does.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog/what-landing-does.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog/what-landing-does.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog/what-landing-does.html"/>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://webonix.md/pages/blog/landing-does-not-promote.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog/landing-does-not-promote.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog/landing-does-not-promote.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog/landing-does-not-promote.html"/>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://webonix.md/ro/pages/blog/landing-does-not-promote.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog/landing-does-not-promote.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog/landing-does-not-promote.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog/landing-does-not-promote.html"/>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://webonix.md/pages/blog/landing-test-idea.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog/landing-test-idea.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog/landing-test-idea.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog/landing-test-idea.html"/>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://webonix.md/ro/pages/blog/landing-test-idea.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webonix.md/pages/blog/landing-test-idea.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://webonix.md/ro/pages/blog/landing-test-idea.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webonix.md/pages/blog/landing-test-idea.html"/>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
